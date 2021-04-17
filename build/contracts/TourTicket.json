@@ -1,0 +1,2090 @@
+{
+  "contractName": "TourTicket",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ticketPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "musicGroup",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "showTime",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "payment",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.3+commit.9bfce1f6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"musicGroup\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"payment\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"showTime\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ticketPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/jeffrey/TourTicketsProject/contracts/TourTicket.sol\":\"TourTicket\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/jeffrey/TourTicketsProject/contracts/TourTicket.sol\":{\"keccak256\":\"0x450e0c298d3498adecf206e854e3c22fd0108d036d5b5d945bf94763f69fa12f\",\"urls\":[\"bzz-raw://3476ba71bcede4156d4c6aa425a04489c576b814aa37a00a1196f31c8951977a\",\"dweb:/ipfs/QmRxHcrA53ZjJVQPN92j8Ds8hcVq9FMpP8f4RJMzSepugt\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5033600060016101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550671bc16d674ec8000060018190555060008060006101000a81548160ff0219169083600181111561007f57fe5b0217905550610443806100936000396000f3fe60806040526004361061004a5760003560e01c80631209b1f61461004f5780631bc3d55b1461007a57806342f6487a1461010a5780638a6b607a146101145780638da5cb5b146101a4575b600080fd5b34801561005b57600080fd5b506100646101e5565b6040518082815260200191505060405180910390f35b34801561008657600080fd5b5061008f6101eb565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100cf5780820151818401526020810190506100b4565b50505050905090810190601f1680156100fc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610112610228565b005b34801561012057600080fd5b506101296103aa565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561016957808201518184015260208101905061014e565b50505050905090810190601f1680156101965780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156101b057600080fd5b506101b96103e7565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60015481565b60606040518060400160405280602081526020017f546865204869766573204c697665202c204f6e65206e69676874206f6e6c7921815250905090565b6000600181111561023557fe5b60008054906101000a900460ff16600181111561024e57fe5b146102c1576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f526567756c61722074696572207469636b657420707269636573206f6e6c792e81525060200191505060405180910390fd5b671bc16d674ec8000034101561033f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f546865207469636b6574206d757374206265207061696420696e2066756c6c2e81525060200191505060405180910390fd5b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156103a7573d6000803e3d6000fd5b50565b60606040518060400160405280601781526020017f53686f772074696d65207374617274732061742035706d000000000000000000815250905090565b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea2646970667358221220bd9cb71185ad921734857ed0a1d94179eb0be991c970d557fd2a77b7b38ae44164736f6c63430007030033",
+  "deployedBytecode": "0x60806040526004361061004a5760003560e01c80631209b1f61461004f5780631bc3d55b1461007a57806342f6487a1461010a5780638a6b607a146101145780638da5cb5b146101a4575b600080fd5b34801561005b57600080fd5b506100646101e5565b6040518082815260200191505060405180910390f35b34801561008657600080fd5b5061008f6101eb565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100cf5780820151818401526020810190506100b4565b50505050905090810190601f1680156100fc5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610112610228565b005b34801561012057600080fd5b506101296103aa565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561016957808201518184015260208101905061014e565b50505050905090810190601f1680156101965780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156101b057600080fd5b506101b96103e7565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60015481565b60606040518060400160405280602081526020017f546865204869766573204c697665202c204f6e65206e69676874206f6e6c7921815250905090565b6000600181111561023557fe5b60008054906101000a900460ff16600181111561024e57fe5b146102c1576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f526567756c61722074696572207469636b657420707269636573206f6e6c792e81525060200191505060405180910390fd5b671bc16d674ec8000034101561033f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f546865207469636b6574206d757374206265207061696420696e2066756c6c2e81525060200191505060405180910390fd5b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f193505050501580156103a7573d6000803e3d6000fd5b50565b60606040518060400160405280601781526020017f53686f772074696d65207374617274732061742035706d000000000000000000815250905090565b600060019054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea2646970667358221220bd9cb71185ad921734857ed0a1d94179eb0be991c970d557fd2a77b7b38ae44164736f6c63430007030033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "27:886:4:-:0;;;209:145;;;;;;;;;;256:10;249:5;;:17;;;;;;;;;;;;;;;;;;290:7;277:11;:20;;;;333:13;318;;:28;;;;;;;;;;;;;;;;;;;;;;;;27:886;;;;;;",
+  "deployedSourceMap": "27:886:4:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;173:23;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;502:116;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;747:163;;;:::i;:::-;;630:105;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;138:28;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;173:23;;;;:::o;502:116::-;543:13;568:42;;;;;;;;;;;;;;;;;;;502:116;:::o;747:163::-;421:13;405:29;;;;;;;;:13;;;;;;;;;;:29;;;;;;;;;397:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;823:7:::1;810:9;:20;;802:64;;;;;;;;;;;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;;;;;;;;877:5;;;;;;;;;;;:14;;:25;892:9;877:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;::::0;::::1;;;;;;747:163::o:0;630:105::-;669:13;694:33;;;;;;;;;;;;;;;;;;;630:105;:::o;138:28::-;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.7.3;\r\n\r\ncontract TourTicket{\r\n    \r\n    enum level{regular, veryImportantPeople}\r\n     level purchaseLevel;\r\n    \r\n    address payable public owner;\r\n    uint public ticketPrice;\r\n    \r\n    constructor()public{\r\n        \r\n        owner= msg.sender;\r\n        ticketPrice= 2 ether;\r\n        \r\n        purchaseLevel= level.regular;\r\n    }\r\n    \r\n    modifier statusLevel{\r\n        require(purchaseLevel== level.regular,'Regular tier ticket prices only.');\r\n        _;\r\n    }\r\n    \r\n    function musicGroup()pure public returns(string memory){\r\n        return(\"The Hives Live , One night only!\");\r\n    }\r\n    \r\n    function showTime()pure public returns(string memory){\r\n        return(\"Show time starts at 5pm\");\r\n    }\r\n    \r\n    function payment()payable public statusLevel{\r\n        require(msg.value >= 2 ether,'The ticket must be paid in full.');\r\n        owner.transfer(msg.value);\r\n    }\r\n}",
+  "sourcePath": "C:/Users/jeffrey/TourTicketsProject/contracts/TourTicket.sol",
+  "ast": {
+    "absolutePath": "/C/Users/jeffrey/TourTicketsProject/contracts/TourTicket.sol",
+    "exportedSymbols": {
+      "TourTicket": [
+        393
+      ]
+    },
+    "id": 394,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 314,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".3"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 393,
+        "linearizedBaseContracts": [
+          393
+        ],
+        "name": "TourTicket",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "TourTicket.level",
+            "id": 317,
+            "members": [
+              {
+                "id": 315,
+                "name": "regular",
+                "nodeType": "EnumValue",
+                "src": "70:7:4"
+              },
+              {
+                "id": 316,
+                "name": "veryImportantPeople",
+                "nodeType": "EnumValue",
+                "src": "79:19:4"
+              }
+            ],
+            "name": "level",
+            "nodeType": "EnumDefinition",
+            "src": "59:40:4"
+          },
+          {
+            "constant": false,
+            "id": 319,
+            "mutability": "mutable",
+            "name": "purchaseLevel",
+            "nodeType": "VariableDeclaration",
+            "scope": 393,
+            "src": "106:19:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_enum$_level_$317",
+              "typeString": "enum TourTicket.level"
+            },
+            "typeName": {
+              "id": 318,
+              "name": "level",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 317,
+              "src": "106:5:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_enum$_level_$317",
+                "typeString": "enum TourTicket.level"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "functionSelector": "8da5cb5b",
+            "id": 321,
+            "mutability": "mutable",
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "scope": 393,
+            "src": "138:28:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 320,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "138:15:4",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "1209b1f6",
+            "id": 323,
+            "mutability": "mutable",
+            "name": "ticketPrice",
+            "nodeType": "VariableDeclaration",
+            "scope": 393,
+            "src": "173:23:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 322,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "173:4:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 340,
+              "nodeType": "Block",
+              "src": "228:126:4",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 329,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 326,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 321,
+                      "src": "249:5:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "expression": {
+                        "id": 327,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -15,
+                        "src": "256:3:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 328,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "src": "256:10:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "249:17:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "id": 330,
+                  "nodeType": "ExpressionStatement",
+                  "src": "249:17:4"
+                },
+                {
+                  "expression": {
+                    "id": 333,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 331,
+                      "name": "ticketPrice",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 323,
+                      "src": "277:11:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "32",
+                      "id": 332,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "290:7:4",
+                      "subdenomination": "ether",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_2000000000000000000_by_1",
+                        "typeString": "int_const 2000000000000000000"
+                      },
+                      "value": "2"
+                    },
+                    "src": "277:20:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 334,
+                  "nodeType": "ExpressionStatement",
+                  "src": "277:20:4"
+                },
+                {
+                  "expression": {
+                    "id": 338,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 335,
+                      "name": "purchaseLevel",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 319,
+                      "src": "318:13:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_level_$317",
+                        "typeString": "enum TourTicket.level"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "expression": {
+                        "id": 336,
+                        "name": "level",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 317,
+                        "src": "333:5:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_enum$_level_$317_$",
+                          "typeString": "type(enum TourTicket.level)"
+                        }
+                      },
+                      "id": 337,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberName": "regular",
+                      "nodeType": "MemberAccess",
+                      "src": "333:13:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_level_$317",
+                        "typeString": "enum TourTicket.level"
+                      }
+                    },
+                    "src": "318:28:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_level_$317",
+                      "typeString": "enum TourTicket.level"
+                    }
+                  },
+                  "id": 339,
+                  "nodeType": "ExpressionStatement",
+                  "src": "318:28:4"
+                }
+              ]
+            },
+            "id": 341,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 324,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "220:2:4"
+            },
+            "returnParameters": {
+              "id": 325,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "228:0:4"
+            },
+            "scope": 393,
+            "src": "209:145:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 352,
+              "nodeType": "Block",
+              "src": "386:104:4",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_level_$317",
+                          "typeString": "enum TourTicket.level"
+                        },
+                        "id": 347,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 344,
+                          "name": "purchaseLevel",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 319,
+                          "src": "405:13:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_level_$317",
+                            "typeString": "enum TourTicket.level"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "expression": {
+                            "id": 345,
+                            "name": "level",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 317,
+                            "src": "421:5:4",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_level_$317_$",
+                              "typeString": "type(enum TourTicket.level)"
+                            }
+                          },
+                          "id": 346,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberName": "regular",
+                          "nodeType": "MemberAccess",
+                          "src": "421:13:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_level_$317",
+                            "typeString": "enum TourTicket.level"
+                          }
+                        },
+                        "src": "405:29:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "526567756c61722074696572207469636b657420707269636573206f6e6c792e",
+                        "id": 348,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "435:34:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_9f73c8b844f201738f4be60599cf18fb64c1ff3ed786908dc3c91b4007fe59ff",
+                          "typeString": "literal_string \"Regular tier ticket prices only.\""
+                        },
+                        "value": "Regular tier ticket prices only."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_9f73c8b844f201738f4be60599cf18fb64c1ff3ed786908dc3c91b4007fe59ff",
+                          "typeString": "literal_string \"Regular tier ticket prices only.\""
+                        }
+                      ],
+                      "id": 343,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "397:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 349,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "397:73:4",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 350,
+                  "nodeType": "ExpressionStatement",
+                  "src": "397:73:4"
+                },
+                {
+                  "id": 351,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "481:1:4"
+                }
+              ]
+            },
+            "id": 353,
+            "name": "statusLevel",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 342,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "386:0:4"
+            },
+            "src": "366:124:4",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 361,
+              "nodeType": "Block",
+              "src": "557:61:4",
+              "statements": [
+                {
+                  "expression": {
+                    "components": [
+                      {
+                        "hexValue": "546865204869766573204c697665202c204f6e65206e69676874206f6e6c7921",
+                        "id": 358,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "575:34:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_8c2ff18b79a4334dd608c49ca3fcc675b46ba83ff9c20ed919ab75c1bbe8cffe",
+                          "typeString": "literal_string \"The Hives Live , One night only!\""
+                        },
+                        "value": "The Hives Live , One night only!"
+                      }
+                    ],
+                    "id": 359,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "574:36:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_8c2ff18b79a4334dd608c49ca3fcc675b46ba83ff9c20ed919ab75c1bbe8cffe",
+                      "typeString": "literal_string \"The Hives Live , One night only!\""
+                    }
+                  },
+                  "functionReturnParameters": 357,
+                  "id": 360,
+                  "nodeType": "Return",
+                  "src": "568:42:4"
+                }
+              ]
+            },
+            "functionSelector": "1bc3d55b",
+            "id": 362,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "musicGroup",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 354,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "521:2:4"
+            },
+            "returnParameters": {
+              "id": 357,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 356,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 362,
+                  "src": "543:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 355,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "543:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "542:15:4"
+            },
+            "scope": 393,
+            "src": "502:116:4",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 370,
+              "nodeType": "Block",
+              "src": "683:52:4",
+              "statements": [
+                {
+                  "expression": {
+                    "components": [
+                      {
+                        "hexValue": "53686f772074696d65207374617274732061742035706d",
+                        "id": 367,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "701:25:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_a771dea5f6f2cab2b217471d6297808cbd79b682549134e9ce3cb562239516dc",
+                          "typeString": "literal_string \"Show time starts at 5pm\""
+                        },
+                        "value": "Show time starts at 5pm"
+                      }
+                    ],
+                    "id": 368,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "700:27:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_a771dea5f6f2cab2b217471d6297808cbd79b682549134e9ce3cb562239516dc",
+                      "typeString": "literal_string \"Show time starts at 5pm\""
+                    }
+                  },
+                  "functionReturnParameters": 366,
+                  "id": 369,
+                  "nodeType": "Return",
+                  "src": "694:33:4"
+                }
+              ]
+            },
+            "functionSelector": "8a6b607a",
+            "id": 371,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "showTime",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 363,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "647:2:4"
+            },
+            "returnParameters": {
+              "id": 366,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 365,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 371,
+                  "src": "669:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 364,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "669:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "668:15:4"
+            },
+            "scope": 393,
+            "src": "630:105:4",
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 391,
+              "nodeType": "Block",
+              "src": "791:119:4",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 380,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "expression": {
+                            "id": 377,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": -15,
+                            "src": "810:3:4",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 378,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "value",
+                          "nodeType": "MemberAccess",
+                          "src": "810:9:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">=",
+                        "rightExpression": {
+                          "hexValue": "32",
+                          "id": 379,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "823:7:4",
+                          "subdenomination": "ether",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_2000000000000000000_by_1",
+                            "typeString": "int_const 2000000000000000000"
+                          },
+                          "value": "2"
+                        },
+                        "src": "810:20:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "546865207469636b6574206d757374206265207061696420696e2066756c6c2e",
+                        "id": 381,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "831:34:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_a1459306538e10fc830814720348c0f04ef74529ae559ab76fb3c91fa8ef7fb1",
+                          "typeString": "literal_string \"The ticket must be paid in full.\""
+                        },
+                        "value": "The ticket must be paid in full."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_a1459306538e10fc830814720348c0f04ef74529ae559ab76fb3c91fa8ef7fb1",
+                          "typeString": "literal_string \"The ticket must be paid in full.\""
+                        }
+                      ],
+                      "id": 376,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "802:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 382,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "802:64:4",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 383,
+                  "nodeType": "ExpressionStatement",
+                  "src": "802:64:4"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 387,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -15,
+                          "src": "892:3:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 388,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "value",
+                        "nodeType": "MemberAccess",
+                        "src": "892:9:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 384,
+                        "name": "owner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 321,
+                        "src": "877:5:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "id": 386,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transfer",
+                      "nodeType": "MemberAccess",
+                      "src": "877:14:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 389,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "877:25:4",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 390,
+                  "nodeType": "ExpressionStatement",
+                  "src": "877:25:4"
+                }
+              ]
+            },
+            "functionSelector": "42f6487a",
+            "id": 392,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 374,
+                "modifierName": {
+                  "id": 373,
+                  "name": "statusLevel",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 353,
+                  "src": "780:11:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "780:11:4"
+              }
+            ],
+            "name": "payment",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 372,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "763:2:4"
+            },
+            "returnParameters": {
+              "id": 375,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "791:0:4"
+            },
+            "scope": 393,
+            "src": "747:163:4",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 394,
+        "src": "27:886:4"
+      }
+    ],
+    "src": "0:913:4"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/Users/jeffrey/TourTicketsProject/contracts/TourTicket.sol",
+      "exportedSymbols": {
+        "TourTicket": [
+          393
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".3"
+          ]
+        },
+        "id": 314,
+        "name": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            393
+          ],
+          "name": "TourTicket",
+          "scope": 394
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "TourTicket.level",
+              "name": "level"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "regular"
+                },
+                "id": 315,
+                "name": "EnumValue",
+                "src": "70:7:4"
+              },
+              {
+                "attributes": {
+                  "name": "veryImportantPeople"
+                },
+                "id": 316,
+                "name": "EnumValue",
+                "src": "79:19:4"
+              }
+            ],
+            "id": 317,
+            "name": "EnumDefinition",
+            "src": "59:40:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "purchaseLevel",
+              "scope": 393,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "enum TourTicket.level",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "level",
+                  "referencedDeclaration": 317,
+                  "type": "enum TourTicket.level"
+                },
+                "id": 318,
+                "name": "UserDefinedTypeName",
+                "src": "106:5:4"
+              }
+            ],
+            "id": 319,
+            "name": "VariableDeclaration",
+            "src": "106:19:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "8da5cb5b",
+              "mutability": "mutable",
+              "name": "owner",
+              "scope": 393,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address payable",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "payable",
+                  "type": "address payable"
+                },
+                "id": 320,
+                "name": "ElementaryTypeName",
+                "src": "138:15:4"
+              }
+            ],
+            "id": 321,
+            "name": "VariableDeclaration",
+            "src": "138:28:4"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "1209b1f6",
+              "mutability": "mutable",
+              "name": "ticketPrice",
+              "scope": 393,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 322,
+                "name": "ElementaryTypeName",
+                "src": "173:4:4"
+              }
+            ],
+            "id": 323,
+            "name": "VariableDeclaration",
+            "src": "173:23:4"
+          },
+          {
+            "attributes": {
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 393,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 324,
+                "name": "ParameterList",
+                "src": "220:2:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 325,
+                "name": "ParameterList",
+                "src": "228:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address payable"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 321,
+                              "type": "address payable",
+                              "value": "owner"
+                            },
+                            "id": 326,
+                            "name": "Identifier",
+                            "src": "249:5:4"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "type": "address payable"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": -15,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 327,
+                                "name": "Identifier",
+                                "src": "256:3:4"
+                              }
+                            ],
+                            "id": 328,
+                            "name": "MemberAccess",
+                            "src": "256:10:4"
+                          }
+                        ],
+                        "id": 329,
+                        "name": "Assignment",
+                        "src": "249:17:4"
+                      }
+                    ],
+                    "id": 330,
+                    "name": "ExpressionStatement",
+                    "src": "249:17:4"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 323,
+                              "type": "uint256",
+                              "value": "ticketPrice"
+                            },
+                            "id": 331,
+                            "name": "Identifier",
+                            "src": "277:11:4"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "32",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": "ether",
+                              "token": "number",
+                              "type": "int_const 2000000000000000000",
+                              "value": "2"
+                            },
+                            "id": 332,
+                            "name": "Literal",
+                            "src": "290:7:4"
+                          }
+                        ],
+                        "id": 333,
+                        "name": "Assignment",
+                        "src": "277:20:4"
+                      }
+                    ],
+                    "id": 334,
+                    "name": "ExpressionStatement",
+                    "src": "277:20:4"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "enum TourTicket.level"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 319,
+                              "type": "enum TourTicket.level",
+                              "value": "purchaseLevel"
+                            },
+                            "id": 335,
+                            "name": "Identifier",
+                            "src": "318:13:4"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "member_name": "regular",
+                              "type": "enum TourTicket.level"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 317,
+                                  "type": "type(enum TourTicket.level)",
+                                  "value": "level"
+                                },
+                                "id": 336,
+                                "name": "Identifier",
+                                "src": "333:5:4"
+                              }
+                            ],
+                            "id": 337,
+                            "name": "MemberAccess",
+                            "src": "333:13:4"
+                          }
+                        ],
+                        "id": 338,
+                        "name": "Assignment",
+                        "src": "318:28:4"
+                      }
+                    ],
+                    "id": 339,
+                    "name": "ExpressionStatement",
+                    "src": "318:28:4"
+                  }
+                ],
+                "id": 340,
+                "name": "Block",
+                "src": "228:126:4"
+              }
+            ],
+            "id": 341,
+            "name": "FunctionDefinition",
+            "src": "209:145:4"
+          },
+          {
+            "attributes": {
+              "name": "statusLevel",
+              "virtual": false,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 342,
+                "name": "ParameterList",
+                "src": "386:0:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_9f73c8b844f201738f4be60599cf18fb64c1ff3ed786908dc3c91b4007fe59ff",
+                                  "typeString": "literal_string \"Regular tier ticket prices only.\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                -18,
+                                -18
+                              ],
+                              "referencedDeclaration": -18,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 343,
+                            "name": "Identifier",
+                            "src": "397:7:4"
+                          },
+                          {
+                            "attributes": {
+                              "commonType": {
+                                "typeIdentifier": "t_enum$_level_$317",
+                                "typeString": "enum TourTicket.level"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 319,
+                                  "type": "enum TourTicket.level",
+                                  "value": "purchaseLevel"
+                                },
+                                "id": 344,
+                                "name": "Identifier",
+                                "src": "405:13:4"
+                              },
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "member_name": "regular",
+                                  "type": "enum TourTicket.level"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 317,
+                                      "type": "type(enum TourTicket.level)",
+                                      "value": "level"
+                                    },
+                                    "id": 345,
+                                    "name": "Identifier",
+                                    "src": "421:5:4"
+                                  }
+                                ],
+                                "id": 346,
+                                "name": "MemberAccess",
+                                "src": "421:13:4"
+                              }
+                            ],
+                            "id": 347,
+                            "name": "BinaryOperation",
+                            "src": "405:29:4"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "526567756c61722074696572207469636b657420707269636573206f6e6c792e",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"Regular tier ticket prices only.\"",
+                              "value": "Regular tier ticket prices only."
+                            },
+                            "id": 348,
+                            "name": "Literal",
+                            "src": "435:34:4"
+                          }
+                        ],
+                        "id": 349,
+                        "name": "FunctionCall",
+                        "src": "397:73:4"
+                      }
+                    ],
+                    "id": 350,
+                    "name": "ExpressionStatement",
+                    "src": "397:73:4"
+                  },
+                  {
+                    "id": 351,
+                    "name": "PlaceholderStatement",
+                    "src": "481:1:4"
+                  }
+                ],
+                "id": 352,
+                "name": "Block",
+                "src": "386:104:4"
+              }
+            ],
+            "id": 353,
+            "name": "ModifierDefinition",
+            "src": "366:124:4"
+          },
+          {
+            "attributes": {
+              "functionSelector": "1bc3d55b",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "musicGroup",
+              "scope": 393,
+              "stateMutability": "pure",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 354,
+                "name": "ParameterList",
+                "src": "521:2:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 362,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 355,
+                        "name": "ElementaryTypeName",
+                        "src": "543:6:4"
+                      }
+                    ],
+                    "id": 356,
+                    "name": "VariableDeclaration",
+                    "src": "543:13:4"
+                  }
+                ],
+                "id": 357,
+                "name": "ParameterList",
+                "src": "542:15:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 357
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "type": "literal_string \"The Hives Live , One night only!\""
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "hexvalue": "546865204869766573204c697665202c204f6e65206e69676874206f6e6c7921",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"The Hives Live , One night only!\"",
+                              "value": "The Hives Live , One night only!"
+                            },
+                            "id": 358,
+                            "name": "Literal",
+                            "src": "575:34:4"
+                          }
+                        ],
+                        "id": 359,
+                        "name": "TupleExpression",
+                        "src": "574:36:4"
+                      }
+                    ],
+                    "id": 360,
+                    "name": "Return",
+                    "src": "568:42:4"
+                  }
+                ],
+                "id": 361,
+                "name": "Block",
+                "src": "557:61:4"
+              }
+            ],
+            "id": 362,
+            "name": "FunctionDefinition",
+            "src": "502:116:4"
+          },
+          {
+            "attributes": {
+              "functionSelector": "8a6b607a",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "showTime",
+              "scope": 393,
+              "stateMutability": "pure",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 363,
+                "name": "ParameterList",
+                "src": "647:2:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "scope": 371,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 364,
+                        "name": "ElementaryTypeName",
+                        "src": "669:6:4"
+                      }
+                    ],
+                    "id": 365,
+                    "name": "VariableDeclaration",
+                    "src": "669:13:4"
+                  }
+                ],
+                "id": 366,
+                "name": "ParameterList",
+                "src": "668:15:4"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 366
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "type": "literal_string \"Show time starts at 5pm\""
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "hexvalue": "53686f772074696d65207374617274732061742035706d",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"Show time starts at 5pm\"",
+                              "value": "Show time starts at 5pm"
+                            },
+                            "id": 367,
+                            "name": "Literal",
+                            "src": "701:25:4"
+                          }
+                        ],
+                        "id": 368,
+                        "name": "TupleExpression",
+                        "src": "700:27:4"
+                      }
+                    ],
+                    "id": 369,
+                    "name": "Return",
+                    "src": "694:33:4"
+                  }
+                ],
+                "id": 370,
+                "name": "Block",
+                "src": "683:52:4"
+              }
+            ],
+            "id": 371,
+            "name": "FunctionDefinition",
+            "src": "630:105:4"
+          },
+          {
+            "attributes": {
+              "functionSelector": "42f6487a",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "name": "payment",
+              "scope": 393,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 372,
+                "name": "ParameterList",
+                "src": "763:2:4"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 375,
+                "name": "ParameterList",
+                "src": "791:0:4"
+              },
+              {
+                "attributes": {},
+                "children": [
+                  {
+                    "attributes": {
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 353,
+                      "type": "modifier ()",
+                      "value": "statusLevel"
+                    },
+                    "id": 373,
+                    "name": "Identifier",
+                    "src": "780:11:4"
+                  }
+                ],
+                "id": 374,
+                "name": "ModifierInvocation",
+                "src": "780:11:4"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                },
+                                {
+                                  "typeIdentifier": "t_stringliteral_a1459306538e10fc830814720348c0f04ef74529ae559ab76fb3c91fa8ef7fb1",
+                                  "typeString": "literal_string \"The ticket must be paid in full.\""
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                -18,
+                                -18
+                              ],
+                              "referencedDeclaration": -18,
+                              "type": "function (bool,string memory) pure",
+                              "value": "require"
+                            },
+                            "id": 376,
+                            "name": "Identifier",
+                            "src": "802:7:4"
+                          },
+                          {
+                            "attributes": {
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": ">=",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "value",
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": -15,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 377,
+                                    "name": "Identifier",
+                                    "src": "810:3:4"
+                                  }
+                                ],
+                                "id": 378,
+                                "name": "MemberAccess",
+                                "src": "810:9:4"
+                              },
+                              {
+                                "attributes": {
+                                  "hexvalue": "32",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": "ether",
+                                  "token": "number",
+                                  "type": "int_const 2000000000000000000",
+                                  "value": "2"
+                                },
+                                "id": 379,
+                                "name": "Literal",
+                                "src": "823:7:4"
+                              }
+                            ],
+                            "id": 380,
+                            "name": "BinaryOperation",
+                            "src": "810:20:4"
+                          },
+                          {
+                            "attributes": {
+                              "hexvalue": "546865207469636b6574206d757374206265207061696420696e2066756c6c2e",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "token": "string",
+                              "type": "literal_string \"The ticket must be paid in full.\"",
+                              "value": "The ticket must be paid in full."
+                            },
+                            "id": 381,
+                            "name": "Literal",
+                            "src": "831:34:4"
+                          }
+                        ],
+                        "id": 382,
+                        "name": "FunctionCall",
+                        "src": "802:64:4"
+                      }
+                    ],
+                    "id": 383,
+                    "name": "ExpressionStatement",
+                    "src": "802:64:4"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "tryCall": false,
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "transfer",
+                              "type": "function (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 321,
+                                  "type": "address payable",
+                                  "value": "owner"
+                                },
+                                "id": 384,
+                                "name": "Identifier",
+                                "src": "877:5:4"
+                              }
+                            ],
+                            "id": 386,
+                            "name": "MemberAccess",
+                            "src": "877:14:4"
+                          },
+                          {
+                            "attributes": {
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "value",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": -15,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 387,
+                                "name": "Identifier",
+                                "src": "892:3:4"
+                              }
+                            ],
+                            "id": 388,
+                            "name": "MemberAccess",
+                            "src": "892:9:4"
+                          }
+                        ],
+                        "id": 389,
+                        "name": "FunctionCall",
+                        "src": "877:25:4"
+                      }
+                    ],
+                    "id": 390,
+                    "name": "ExpressionStatement",
+                    "src": "877:25:4"
+                  }
+                ],
+                "id": 391,
+                "name": "Block",
+                "src": "791:119:4"
+              }
+            ],
+            "id": 392,
+            "name": "FunctionDefinition",
+            "src": "747:163:4"
+          }
+        ],
+        "id": 393,
+        "name": "ContractDefinition",
+        "src": "27:886:4"
+      }
+    ],
+    "id": 394,
+    "name": "SourceUnit",
+    "src": "0:913:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.3+commit.9bfce1f6.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-04-06T01:14:44.694Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
